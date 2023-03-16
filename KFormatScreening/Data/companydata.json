@@ -1,0 +1,67 @@
+[{
+    "id":0,
+    "companyName":"KBS Media America",
+    "companyPerson":"Hyewon Hyun",
+    "companyPosition":"Director",
+    "companyDescription":"This is a company description.",
+    "companyEmail":"hyewon@kbsmedia.co.kr",
+    "companyPhone":"1-323-326-4657",
+    "companyUrl":"https://global.kbsmedia.co.kr",
+    "companyLogo":"logo_kbs",
+    "companyShow":[{
+        "id":0,
+        "showType":"Scripted",
+        "showName":"The KBS Show I",
+        "showYear":"2022",
+        "showGenre":"Comedy, Variety",
+        "showDescription":"This is a show description",
+        "showTime":70,
+        "showEpisodes":17,
+        "showUrl":"https://showurl.mp4"
+        },
+        {
+            "id":1,
+            "showType":"Non-Scripted",
+            "showName":"The KBS Show II",
+            "showYear":"2022",
+            "showGenre":"Comedy, Variety",
+            "showDescription":"This is a show description",
+            "showTime":70,
+            "showEpisodes":17,
+            "showUrl":"https://showurl.mp4"
+        }]
+},
+{
+    "id":1,
+    "companyName":"MBC America",
+    "companyPerson":"Rachel Kim",
+    "companyPosition":"Contents Department Director",
+    "companyDescription":"This is a MBC description.",
+    "companyEmail":"rachelkim@mbc24tv.com",
+    "companyPhone":"1-513-213-8159",
+    "companyUrl":"https://www.mbc-america.com",
+    "companyLogo":"logo_mbc",
+    "companyShow":[{
+            "id":0,
+            "showType":"Scripted",
+            "showName":"The MBC Show I",
+            "showYear":"2022",
+            "showGenre":"Comedy, Variety",
+            "showDescription":"This is a show description",
+            "showTime":70,
+            "showEpisodes":17,
+            "showUrl":"https://showurl.mp4"
+        },
+        {
+            "id":1,
+            "showType":"Non-Scripted",
+            "showName":"The MBC Show II",
+            "showYear":"2022",
+            "showGenre":"Comedy, Variety",
+            "showDescription":"This is a show description",
+            "showTime":70,
+            "showEpisodes":17,
+            "showUrl":"https://showurl.mp4"
+        }]
+}
+]

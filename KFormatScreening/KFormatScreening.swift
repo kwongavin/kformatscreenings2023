@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct KFormatScreeningApp: App {
+struct KFormatScreening: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
+                .environmentObject(CompanyModel())
         }
     }
 }
