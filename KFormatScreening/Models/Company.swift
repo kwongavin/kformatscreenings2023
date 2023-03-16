@@ -17,6 +17,7 @@ struct Company: Decodable, Identifiable {
     var companyEmail: String
     var companyPhone: String
     var companyUrl: String
+    var companyPTurl: String
     var companyLogo: String
     var companyShow: [Show]
     

@@ -20,15 +20,16 @@ struct PTView: View {
                     .font(Font.custom("Avenir Heavy", size: 24))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
+                
                 ScrollView {
                     ForEach(0..<company.companies.count) { index in
                         
                         PTCompanyListView(selectedPTIndex: index)
                         Divider()
                     }
-                    .padding()
                 }
             }
+            .padding()
         }
     }
 }
