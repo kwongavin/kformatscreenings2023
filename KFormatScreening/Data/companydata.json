@@ -79,5 +79,46 @@
             "showEpisodes":"17 Episodes",
             "showUrl":"https://showurl.mp4"
         }]
+},
+{
+    "id":2,
+    "companyName":"JTBC",
+    "companyPerson":"Rachel Kim",
+    "companyPosition":"Contents Dept. Director",
+    "companyDescription":"MBC Group (Arabic: مجموعة إم بي سي), is a Saudi media conglomerate based in the Middle East and North Africa region. Launched in London in 1991, the company moved to its headquarters to Dubai in 2002 then moved to Riyadh in 2022.\n\nMBC Group operates over 17 free-to-air satellite TV channels, and a video on demand service (Shahid). MBC was the first broadcaster to provide a satellite-based free-to-air 24-hour television broadcasting network across the Arab world. The Group's current chairman is Waleed bin Ibrahim Al Ibrahim.[2] Sam Barnett returned as MBC Group CEO in December 2020 after a one-year departure. MBC's television arm, MBC TV, broadcasts via Eutelsat, Arabsat and Nilesat satellites. MBC has more than 2,000 staff.\n\nIn recent years MBC has been hit with major rounds of financial cuts, leading to 150 layoffs and major production cuts. These cuts were driven in part due to advertising not covering production costs and the failure to acquire exclusive rights to the Saudi league.[4] As of 2011 MBC reported 165 million viewers.",
+    "companyEmail":"rachelkim@mbc24tv.com",
+    "companyPhone":"1-513-213-8159",
+    "companyColor":"color_jtbc",
+    "companyUrl":"https://www.mbc-america.com",
+    "companyPTurl":"https://github.com/kwongavin/kformatscreening/blob/main/muscle1.mp4?raw=true",
+    "companyLogo":"logo_jtbc",
+    "companyShow":[{
+            "id":4,
+            "showType":"Scripted",
+            "showName":"The MBC Show I",
+            "showImage":"show_mbc1",
+            "showLogo":"logo_jtbc",
+            "showColor":"color_jtbc",
+            "showYear":"2022",
+            "showGenre":"Comedy, Variety",
+            "showDescription":"Shaun Murphy, a young autistic surgeon who has savant syndrome, relocates from a quiet country life to join the surgical unit at the prestigious San Jose St. Bonaventure Hospital -- a move strongly supported by his mentor, Dr. Aaron Glassman. Having survived a troubled childhood, Shaun is alone in the world and unable to personally connect with those around him, but he finds his niche using his extraordinary medical skill and intuition to save lives and challenge the skepticism of his colleagues.",
+            "showTime":"70 Minutes",
+            "showEpisodes":"17 Episodes",
+            "showUrl":"https://showurl.mp4"
+        },
+        {
+            "id":5,
+            "showType":"Non-Scripted",
+            "showName":"The MBC Show II",
+            "showImage":"show_mbc2",
+            "showLogo":"logo_jtbc",
+            "showColor":"color_jtbc",
+            "showYear":"2022",
+            "showGenre":"Comedy, Variety",
+            "showDescription":"Shaun Murphy, a young autistic surgeon who has savant syndrome, relocates from a quiet country life to join the surgical unit at the prestigious San Jose St. Bonaventure Hospital -- a move strongly supported by his mentor, Dr. Aaron Glassman. Having survived a troubled childhood, Shaun is alone in the world and unable to personally connect with those around him, but he finds his niche using his extraordinary medical skill and intuition to save lives and challenge the skepticism of his colleagues.",
+            "showTime":"70 Minutes",
+            "showEpisodes":"17 Episodes",
+            "showUrl":"https://showurl.mp4"
+        }]
 }
 ]

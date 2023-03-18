@@ -64,6 +64,6 @@ struct TrailersListView: View {
 
 struct TrailersListView_Previews: PreviewProvider {
     static var previews: some View {
-        TrailersListView(enteredShowType: "Scripted", enteredShowName: "Fellow Citizens!", enteredShowImage: "show_kbs1", enteredShowLogo: "logo_kbs", enteredShowColor: "color_kbs", enteredShowYear: "2023", enteredShowGenre: "Comedy, Thriller", enteredShowTime: "30 Minutes", enteredShowEpisodes: "17 Episodes", enteredShowUrl: "https://github.com/kwongavin/kformatscreening/blob/main/muscle1.mp4?raw=true")
+        TrailersListView(enteredShowType: "Scripted", enteredShowName: "Fellow Citizens!", enteredShowImage: "show_kbs1", enteredShowLogo: "logo_jtbc", enteredShowColor: "color_kbs", enteredShowYear: "2023", enteredShowGenre: "Comedy, Thriller", enteredShowTime: "30 Minutes", enteredShowEpisodes: "17 Episodes", enteredShowUrl: "https://github.com/kwongavin/kformatscreening/blob/main/muscle1.mp4?raw=true")
     }
 }

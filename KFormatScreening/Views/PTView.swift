@@ -25,6 +25,7 @@ struct PTView: View {
                     ForEach(company.companies.indices.shuffled(), id:\.self) { index in
                         NavigationLink(destination: PTVideoView(selectedCompanyIndex: index), label: {
                             PTListView(selectedPTIndex: index)
+                                .frame(height:100)
                                 .padding(.vertical, 15)
                                 .accentColor(.black)
                         })
