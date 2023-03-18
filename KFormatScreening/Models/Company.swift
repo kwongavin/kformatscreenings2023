@@ -16,6 +16,7 @@ struct Company: Decodable, Identifiable {
     var companyDescription: String
     var companyEmail: String
     var companyPhone: String
+    var companyColor: String
     var companyUrl: String
     var companyPTurl: String
     var companyLogo: String
@@ -23,15 +24,18 @@ struct Company: Decodable, Identifiable {
     
 }
 
-struct Show: Decodable, Identifiable {
+struct Show: Decodable, Identifiable, Hashable {
     
     var id: Int
     var showType: String
     var showName: String
+    var showImage: String
+    var showLogo: String
+    var showColor: String
     var showYear: String
     var showGenre: String
     var showDescription: String
-    var showTime: Int
+    var showTime: String
     var showEpisodes: Int
     var showUrl: String
     

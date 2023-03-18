@@ -7,22 +7,21 @@
 
 import SwiftUI
 
-struct ShowRectangle: View {
+struct RectanglePreset: View {
     
-    var color = Color.white
+//    var color = Color.mint
     
     var body: some View {
         
         Rectangle()
-            .foregroundColor(color)
+//            .foregroundColor(color)
             .cornerRadius(10)
             .shadow(radius: 5)
-            .padding()
     }
 }
 
-struct ShowListView_Previews: PreviewProvider {
+struct RectanglePreset_Previews: PreviewProvider {
     static var previews: some View {
-        ShowRectangle()
+        RectanglePreset()
     }
 }

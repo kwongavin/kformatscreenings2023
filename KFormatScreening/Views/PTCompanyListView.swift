@@ -13,7 +13,7 @@ struct PTCompanyListView: View {
     @State var selectedPTIndex: Int
     
     var body: some View {
-        ScrollView {
+//        ScrollView {
             LazyVStack(alignment: .leading) {
                 
                 HStack {
@@ -25,13 +25,13 @@ struct PTCompanyListView: View {
                         .padding(.trailing, 20)
                     VStack(alignment: .leading) {
                         Text(company.companies[selectedPTIndex].companyName)
-                            .font(Font.custom("Avenir Black", size: 25))
+                            .font(Font.custom("Avenir Black", size: 24))
                             .padding(.bottom, 1)
                     }
                 }
                 
             }
-        }
+//        }
 
     }
 }

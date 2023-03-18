@@ -22,9 +22,12 @@ struct PTView: View {
                     .padding()
                 
                 ScrollView {
-                    ForEach(0..<company.companies.count) { index in
-                        
-                        PTCompanyListView(selectedPTIndex: index)
+                    ForEach(company.companies.indices) { index in
+                        NavigationLink(destination: ShowView(selectedCompanyIndex: index), label: {
+                            PTCompanyListView(selectedPTIndex: index)
+                                .padding(.vertical, 15)
+                                .accentColor(.black)
+                        })
                         Divider()
                     }
                 }
