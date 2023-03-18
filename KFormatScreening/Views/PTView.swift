@@ -22,9 +22,9 @@ struct PTView: View {
                     .padding()
                 
                 ScrollView {
-                    ForEach(company.companies.indices) { index in
-                        NavigationLink(destination: ShowView(selectedCompanyIndex: index), label: {
-                            PTCompanyListView(selectedPTIndex: index)
+                    ForEach(company.companies.indices.shuffled(), id:\.self) { index in
+                        NavigationLink(destination: PTVideoView(selectedCompanyIndex: index), label: {
+                            PTListView(selectedPTIndex: index)
                                 .padding(.vertical, 15)
                                 .accentColor(.black)
                         })

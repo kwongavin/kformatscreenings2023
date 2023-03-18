@@ -25,9 +25,14 @@ struct TrailersView: View {
             ScrollView {
                 
                 ForEach(companyShows.shuffled()) { show in
+                    
+                    NavigationLink(destination: TrailersVideoView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl), label: {
+                        
+                        TrailersListView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl)
+                            .padding(.bottom, 25)
+                        
+                    })
 
-                    TrailersListView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl)
-                        .padding(.bottom, 25)
                 }
                 
             }

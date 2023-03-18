@@ -8,7 +8,7 @@
 import SwiftUI
 import AVKit
 
-struct ShowView: View {
+struct PTVideoView: View {
     
     @EnvironmentObject var company: CompanyModel
     @Environment(\.presentationMode) var presentationMode
@@ -139,9 +139,9 @@ struct ShowView: View {
     }
 }
 
-struct ShowView_Previews: PreviewProvider {
+struct PTVideoView_Previews: PreviewProvider {
     static var previews: some View {
-        ShowView(selectedCompanyIndex: 1)
+        PTVideoView(selectedCompanyIndex: 1)
             .environmentObject(CompanyModel())
     }
 }

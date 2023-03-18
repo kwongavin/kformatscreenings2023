@@ -36,7 +36,7 @@ struct Show: Decodable, Identifiable, Hashable {
     var showGenre: String
     var showDescription: String
     var showTime: String
-    var showEpisodes: Int
+    var showEpisodes: String
     var showUrl: String
     
 }

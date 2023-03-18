@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092629C56E8B00AA13C6 /* TrailersListView.swift */; };
+		860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092829C5825100AA13C6 /* TrailersVideoView.swift */; };
 		868D7DCB29C38410003C6494 /* KFormatScreening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DCA29C38410003C6494 /* KFormatScreening.swift */; };
 		868D7DCF29C38411003C6494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D7DCE29C38411003C6494 /* Assets.xcassets */; };
 		868D7DD229C38411003C6494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D7DD129C38411003C6494 /* Preview Assets.xcassets */; };
@@ -19,14 +20,15 @@
 		868D7DE729C395E6003C6494 /* PTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DE629C395E6003C6494 /* PTView.swift */; };
 		868D7DE929C396B2003C6494 /* TrailersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DE829C396B2003C6494 /* TrailersView.swift */; };
 		868D7DEC29C3976A003C6494 /* KeynoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DEB29C3976A003C6494 /* KeynoteView.swift */; };
-		868D7DEE29C3AF5E003C6494 /* PTCompanyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DED29C3AF5E003C6494 /* PTCompanyListView.swift */; };
-		868D7DF429C3D460003C6494 /* ShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DF329C3D460003C6494 /* ShowView.swift */; };
+		868D7DEE29C3AF5E003C6494 /* PTListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DED29C3AF5E003C6494 /* PTListView.swift */; };
+		868D7DF429C3D460003C6494 /* PTVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DF329C3D460003C6494 /* PTVideoView.swift */; };
 		868D7DF629C3D530003C6494 /* RectanglePreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DF529C3D530003C6494 /* RectanglePreset.swift */; };
 		868D7DF929C3D8B6003C6494 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 868D7DF829C3D8B6003C6494 /* AVKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		860A092629C56E8B00AA13C6 /* TrailersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersListView.swift; sourceTree = "<group>"; };
+		860A092829C5825100AA13C6 /* TrailersVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersVideoView.swift; sourceTree = "<group>"; };
 		868D7DC729C38410003C6494 /* KFormatScreening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFormatScreening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D7DCA29C38410003C6494 /* KFormatScreening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFormatScreening.swift; sourceTree = "<group>"; };
 		868D7DCE29C38411003C6494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -39,8 +41,8 @@
 		868D7DE629C395E6003C6494 /* PTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTView.swift; sourceTree = "<group>"; };
 		868D7DE829C396B2003C6494 /* TrailersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersView.swift; sourceTree = "<group>"; };
 		868D7DEB29C3976A003C6494 /* KeynoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteView.swift; sourceTree = "<group>"; };
-		868D7DED29C3AF5E003C6494 /* PTCompanyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTCompanyListView.swift; sourceTree = "<group>"; };
-		868D7DF329C3D460003C6494 /* ShowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowView.swift; sourceTree = "<group>"; };
+		868D7DED29C3AF5E003C6494 /* PTListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTListView.swift; sourceTree = "<group>"; };
+		868D7DF329C3D460003C6494 /* PTVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTVideoView.swift; sourceTree = "<group>"; };
 		868D7DF529C3D530003C6494 /* RectanglePreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectanglePreset.swift; sourceTree = "<group>"; };
 		868D7DF829C3D8B6003C6494 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -118,11 +120,12 @@
 				868D7DE229C3939E003C6494 /* MainTabView.swift */,
 				868D7DE429C395C0003C6494 /* WelcomeView.swift */,
 				868D7DE629C395E6003C6494 /* PTView.swift */,
-				868D7DED29C3AF5E003C6494 /* PTCompanyListView.swift */,
-				868D7DF329C3D460003C6494 /* ShowView.swift */,
+				868D7DED29C3AF5E003C6494 /* PTListView.swift */,
+				868D7DF329C3D460003C6494 /* PTVideoView.swift */,
 				868D7DF529C3D530003C6494 /* RectanglePreset.swift */,
 				868D7DE829C396B2003C6494 /* TrailersView.swift */,
 				860A092629C56E8B00AA13C6 /* TrailersListView.swift */,
+				860A092829C5825100AA13C6 /* TrailersVideoView.swift */,
 				868D7DEB29C3976A003C6494 /* KeynoteView.swift */,
 			);
 			path = Views;
@@ -216,13 +219,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				868D7DE529C395C0003C6494 /* WelcomeView.swift in Sources */,
-				868D7DEE29C3AF5E003C6494 /* PTCompanyListView.swift in Sources */,
+				868D7DEE29C3AF5E003C6494 /* PTListView.swift in Sources */,
 				868D7DE129C39009003C6494 /* CompanyModel.swift in Sources */,
 				868D7DE729C395E6003C6494 /* PTView.swift in Sources */,
 				868D7DCB29C38410003C6494 /* KFormatScreening.swift in Sources */,
-				868D7DF429C3D460003C6494 /* ShowView.swift in Sources */,
+				868D7DF429C3D460003C6494 /* PTVideoView.swift in Sources */,
 				868D7DE929C396B2003C6494 /* TrailersView.swift in Sources */,
 				868D7DF629C3D530003C6494 /* RectanglePreset.swift in Sources */,
+				860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */,
 				860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */,
 				868D7DDC29C38469003C6494 /* Company.swift in Sources */,
 				868D7DEC29C3976A003C6494 /* KeynoteView.swift in Sources */,

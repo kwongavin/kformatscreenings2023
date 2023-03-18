@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PTCompanyListView: View {
+struct PTListView: View {
     
     @EnvironmentObject var company: CompanyModel
     @State var selectedPTIndex: Int
@@ -36,9 +36,9 @@ struct PTCompanyListView: View {
     }
 }
 
-struct PTDetailView_Previews: PreviewProvider {
+struct PTListView_Previews: PreviewProvider {
     static var previews: some View {
-        PTCompanyListView(selectedPTIndex: 1)
+        PTListView(selectedPTIndex: 1)
             .environmentObject(CompanyModel())
     }
 }
