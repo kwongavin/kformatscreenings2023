@@ -8,13 +8,44 @@
 import SwiftUI
 
 struct TrailersView: View {
+    
+    @EnvironmentObject var company: CompanyModel
+    @State private var companyShows: [Show] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Trailers")
+                .font(Font.custom("Avenir Heavy", size: 24))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .onAppear {
+                    loadCompanyShows()
+                }
+            
+            ScrollView {
+                
+                ForEach(companyShows.shuffled()) { show in
+
+                    TrailersListView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl)
+                        .padding(.bottom, 25)
+                }
+                
+            }
+//            .id(companyShows)
+        }
+        .padding()
     }
+    
+    func loadCompanyShows() {
+            let allShows = company.companies.flatMap { $0.companyShow }
+            companyShows = allShows
+    }
+    
 }
 
 struct PrailersView_Previews: PreviewProvider {
     static var previews: some View {
         TrailersView()
+            .environmentObject(CompanyModel())
     }
 }
