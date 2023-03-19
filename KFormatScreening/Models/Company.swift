@@ -28,6 +28,11 @@ struct Show: Decodable, Identifiable, Hashable {
     
     var id: Int
     var showType: String
+    var showCompany: String
+    var showPerson: String
+    var showPosition: String
+    var showEmail: String
+    var showPhone: String
     var showName: String
     var showImage: String
     var showLogo: String

@@ -11,6 +11,11 @@ import AVKit
 struct TrailersVideoView: View {
     
     @State var enteredShowType: String
+    @State var enteredShowCompany: String
+    @State var enteredShowPerson: String
+    @State var enteredShowPosition: String
+    @State var enteredShowEmail: String
+    @State var enteredShowPhone: String
     @State var enteredShowName: String
     @State var enteredShowImage: String
     @State var enteredShowLogo: String
@@ -106,6 +111,47 @@ struct TrailersVideoView: View {
                         .font(Font.custom("Avenir", size: 19))
                         .padding(.horizontal)
                 }
+                
+                Divider()
+                    .padding(.vertical, 10)
+                
+                ZStack(alignment: .leading) {
+                    RectanglePreset()
+                        .foregroundColor(Color(enteredShowColor))
+                        .padding(.top, 5)
+                        .opacity(0.2)
+                        .frame(maxWidth: .infinity)
+                        .aspectRatio(16/6.5,contentMode: .fit)
+                    
+                    VStack(alignment: .leading, spacing: 10) {
+                        
+                        Text(enteredShowCompany)
+                            .font(Font.custom("Avenir Black", size: 22))
+                        Divider()
+                        HStack {
+                            Text(enteredShowPerson)
+                                .font(Font.custom("Avenir Heavy", size: 20))
+                            Text("|  " + enteredShowPosition)
+                                .font(Font.custom("Avenir", size: 18))
+                        }
+                        
+                        HStack {
+                            Link(enteredShowPhone + "  | ", destination: URL(string: "tel:\(enteredShowPhone)")!)
+                                .accentColor(.black)
+                                .font(Font.custom("Avenir Roman", size: 15))
+//                            Text(enteredShowPhone + "  | " )
+//                                .font(Font.custom("Avenir Roman", size: 15))
+                            Link(enteredShowEmail, destination: URL(string: "mailto:\(enteredShowEmail)")!)
+                                .accentColor(.black)
+                                .padding(.top, 1)
+                                .font(Font.custom("Avenir", size: 15))
+//                            Text(enteredShowEmail)
+//                                .padding(.top, 1)
+//                                .font(Font.custom("Avenir", size: 15))
+//                                .textSelection(.enabled)
+                        }
+                    } .padding()
+                }
             }
             
         }
@@ -116,6 +162,6 @@ struct TrailersVideoView: View {
 
 struct TrailersVideoView_Previews: PreviewProvider {
     static var previews: some View {
-        TrailersVideoView(enteredShowType: "Non-Scripted", enteredShowName: "Euphoria 2025", enteredShowImage: "show_mbc1", enteredShowLogo: "logo_kbs", enteredShowColor: "color_kbs", enteredShowYear: "2023", enteredShowGenre: "Comedy, Thriller", enteredShowDescription: "Shaun Murphy, a young autistic surgeon who has savant syndrome, relocates from a quiet country life to join the surgical unit at the prestigious San Jose St. Bonaventure Hospital -- a move strongly supported by his mentor, Dr. Aaron Glassman. Having survived a troubled childhood, Shaun is alone in the world and unable to personally connect with those around him, but he finds his niche using his extraordinary medical skill and intuition to save lives and challenge the skepticism of his colleagues.", enteredShowTime: "70 Minutes", enteredShowEpisodes: "17 Episodes", enteredShowUrl: "https://github.com/kwongavin/kformatscreening/blob/main/muscle1.mp4?raw=true")
+        TrailersVideoView(enteredShowType: "Non-Scripted", enteredShowCompany: "MBC America", enteredShowPerson: "Hyewon Chung", enteredShowPosition: "Director", enteredShowEmail: "chung@kbsmedia.co.kr", enteredShowPhone: "1-323-935-5001", enteredShowName: "Euphoria 2025", enteredShowImage: "show_mbc1", enteredShowLogo: "logo_kbs", enteredShowColor: "color_kbs", enteredShowYear: "2023", enteredShowGenre: "Comedy, Thriller", enteredShowDescription: "Shaun Murphy, a young autistic surgeon who has savant syndrome, relocates from a quiet country life to join the surgical unit at the prestigious San Jose St. Bonaventure Hospital -- a move strongly supported by his mentor, Dr. Aaron Glassman. Having survived a troubled childhood, Shaun is alone in the world and unable to personally connect with those around him, but he finds his niche using his extraordinary medical skill and intuition to save lives and challenge the skepticism of his colleagues.", enteredShowTime: "70 Minutes", enteredShowEpisodes: "17 Episodes", enteredShowUrl: "https://github.com/kwongavin/kformatscreening/blob/main/muscle1.mp4?raw=true")
     }
 }

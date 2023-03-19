@@ -22,7 +22,12 @@ struct KeynoteView: View {
                 ScrollView {
                     ForEach(keynote.keynotes.shuffled()) { index in
                         
-                        KeynoteListView(enteredKeynotePerson: index.keynotePerson, enteredKeynoteTitle: index.keynoteTitle, enteredKeynoteImage: index.keynoteImage, enteredKeynoteCompany: index.keynoteCompany, enteredKeynotePosition: index.keynotePosition, enteredKeynoteColor: index.keynoteColor, enteredKeynoteLogo: index.keynoteLogo)
+                        NavigationLink(destination: {
+                            KeynoteVideoView(enteredKeynotePerson: index.keynotePerson, enteredKeynoteTitle: index.keynoteTitle, enteredKeynoteCompany: index.keynoteCompany, enteredKeynotePosition: index.keynotePosition, enteredKeynoteColor: index.keynoteColor, enteredKeynoteLogo: index.keynoteLogo, enteredkeynoteVideourl: index.keynoteVideourl, keynoteDescription: index.keynoteDescription)
+                        }, label: {
+                            KeynoteListView(enteredKeynotePerson: index.keynotePerson, enteredKeynoteTitle: index.keynoteTitle, enteredKeynoteImage: index.keynoteImage, enteredKeynoteCompany: index.keynoteCompany, enteredKeynotePosition: index.keynotePosition, enteredKeynoteColor: index.keynoteColor, enteredKeynoteLogo: index.keynoteLogo)
+                        })
+                        .accentColor(.black)
                         Divider()
                             .padding(.vertical)
                         
@@ -30,7 +35,7 @@ struct KeynoteView: View {
                     
                 }
             }
-        } .padding()
+        } .padding([.top, .leading, .trailing])
     }
 }
 

@@ -113,11 +113,19 @@ struct PTVideoView: View {
                         }
                         
                         HStack {
-                            Text(company.companies[selectedCompanyIndex].companyPhone)
+                            Link(company.companies[selectedCompanyIndex].companyPhone + "  | ", destination: URL(string: "tel:\(company.companies[selectedCompanyIndex].companyPhone)")!)
+                                .accentColor(.black)
                                 .font(Font.custom("Avenir Roman", size: 15))
-                            Text("|  " + company.companies[selectedCompanyIndex].companyEmail)
+//                            Text(company.companies[selectedCompanyIndex].companyPhone + "  | ")
+//                                .font(Font.custom("Avenir Roman", size: 15))
+                            Link(company.companies[selectedCompanyIndex].companyEmail, destination: URL(string: "mailto:\(company.companies[selectedCompanyIndex].companyEmail)")!)
+                                .accentColor(.black)
                                 .padding(.top, 1)
                                 .font(Font.custom("Avenir", size: 15))
+//                            Text(company.companies[selectedCompanyIndex].companyEmail)
+//                                .padding(.top, 1)
+//                                .font(Font.custom("Avenir", size: 15))
+//                                .textSelection(.enabled)
                         }
                     } .padding()
                 }

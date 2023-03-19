@@ -27,7 +27,7 @@ struct TrailersView: View {
                     
                     ForEach(companyShows.shuffled()) { show in
                         
-                        NavigationLink(destination: TrailersVideoView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl), label: {
+                        NavigationLink(destination: TrailersVideoView(enteredShowType: show.showType, enteredShowCompany: show.showCompany, enteredShowPerson: show.showPerson, enteredShowPosition: show.showPosition, enteredShowEmail: show.showEmail, enteredShowPhone: show.showPhone, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl), label: {
                             
                             TrailersListView(enteredShowType: show.showType, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl)
                                 .multilineTextAlignment(.leading)
