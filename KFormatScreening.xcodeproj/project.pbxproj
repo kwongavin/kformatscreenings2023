@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092629C56E8B00AA13C6 /* TrailersListView.swift */; };
 		860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092829C5825100AA13C6 /* TrailersVideoView.swift */; };
+		86317F9F29C6828900A9B472 /* keynotedata.json in Resources */ = {isa = PBXBuildFile; fileRef = 86317F9E29C6828900A9B472 /* keynotedata.json */; };
+		86317FA129C684B000A9B472 /* Keynote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86317FA029C684B000A9B472 /* Keynote.swift */; };
+		86317FA329C6852F00A9B472 /* KeynoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86317FA229C6852F00A9B472 /* KeynoteModel.swift */; };
+		86317FA729C6B00D00A9B472 /* KeynoteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86317FA629C6B00D00A9B472 /* KeynoteListView.swift */; };
 		868D7DCB29C38410003C6494 /* KFormatScreening.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868D7DCA29C38410003C6494 /* KFormatScreening.swift */; };
 		868D7DCF29C38411003C6494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D7DCE29C38411003C6494 /* Assets.xcassets */; };
 		868D7DD229C38411003C6494 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 868D7DD129C38411003C6494 /* Preview Assets.xcassets */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		860A092629C56E8B00AA13C6 /* TrailersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersListView.swift; sourceTree = "<group>"; };
 		860A092829C5825100AA13C6 /* TrailersVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersVideoView.swift; sourceTree = "<group>"; };
+		86317F9E29C6828900A9B472 /* keynotedata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = keynotedata.json; sourceTree = "<group>"; };
+		86317FA029C684B000A9B472 /* Keynote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keynote.swift; sourceTree = "<group>"; };
+		86317FA229C6852F00A9B472 /* KeynoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteModel.swift; sourceTree = "<group>"; };
+		86317FA629C6B00D00A9B472 /* KeynoteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteListView.swift; sourceTree = "<group>"; };
 		868D7DC729C38410003C6494 /* KFormatScreening.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KFormatScreening.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		868D7DCA29C38410003C6494 /* KFormatScreening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KFormatScreening.swift; sourceTree = "<group>"; };
 		868D7DCE29C38411003C6494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				868D7DDB29C38469003C6494 /* Company.swift */,
+				86317FA029C684B000A9B472 /* Keynote.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -110,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				868D7DE029C39009003C6494 /* CompanyModel.swift */,
+				86317FA229C6852F00A9B472 /* KeynoteModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -127,6 +137,7 @@
 				860A092629C56E8B00AA13C6 /* TrailersListView.swift */,
 				860A092829C5825100AA13C6 /* TrailersVideoView.swift */,
 				868D7DEB29C3976A003C6494 /* KeynoteView.swift */,
+				86317FA629C6B00D00A9B472 /* KeynoteListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				868D7DDE29C3888B003C6494 /* companydata.json */,
+				86317F9E29C6828900A9B472 /* keynotedata.json */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -206,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				868D7DDF29C3888B003C6494 /* companydata.json in Resources */,
+				86317F9F29C6828900A9B472 /* keynotedata.json in Resources */,
 				868D7DD229C38411003C6494 /* Preview Assets.xcassets in Resources */,
 				868D7DCF29C38411003C6494 /* Assets.xcassets in Resources */,
 			);
@@ -224,11 +237,14 @@
 				868D7DE729C395E6003C6494 /* PTView.swift in Sources */,
 				868D7DCB29C38410003C6494 /* KFormatScreening.swift in Sources */,
 				868D7DF429C3D460003C6494 /* PTVideoView.swift in Sources */,
+				86317FA729C6B00D00A9B472 /* KeynoteListView.swift in Sources */,
+				86317FA329C6852F00A9B472 /* KeynoteModel.swift in Sources */,
 				868D7DE929C396B2003C6494 /* TrailersView.swift in Sources */,
 				868D7DF629C3D530003C6494 /* RectanglePreset.swift in Sources */,
 				860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */,
 				860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */,
 				868D7DDC29C38469003C6494 /* Company.swift in Sources */,
+				86317FA129C684B000A9B472 /* Keynote.swift in Sources */,
 				868D7DEC29C3976A003C6494 /* KeynoteView.swift in Sources */,
 				868D7DE329C3939E003C6494 /* MainTabView.swift in Sources */,
 			);
