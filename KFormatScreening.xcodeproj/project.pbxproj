@@ -134,13 +134,13 @@
 				868D7DE629C395E6003C6494 /* PTView.swift */,
 				868D7DED29C3AF5E003C6494 /* PTListView.swift */,
 				868D7DF329C3D460003C6494 /* PTVideoView.swift */,
-				868D7DF529C3D530003C6494 /* RectanglePreset.swift */,
 				868D7DE829C396B2003C6494 /* TrailersView.swift */,
 				860A092629C56E8B00AA13C6 /* TrailersListView.swift */,
 				860A092829C5825100AA13C6 /* TrailersVideoView.swift */,
 				868D7DEB29C3976A003C6494 /* KeynoteView.swift */,
 				86317FA629C6B00D00A9B472 /* KeynoteListView.swift */,
 				86317FA829C7970D00A9B472 /* KeynoteVideoView.swift */,
+				868D7DF529C3D530003C6494 /* RectanglePreset.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";

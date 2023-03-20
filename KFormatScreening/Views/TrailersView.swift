@@ -11,6 +11,8 @@ struct TrailersView: View {
     
     @EnvironmentObject var company: CompanyModel
     @State private var companyShows: [Show] = []
+    @State var showTypeIndex = 0
+    
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -24,9 +26,27 @@ struct TrailersView: View {
                         loadCompanyShows()
                     }
                 
+                Picker("", selection: $showTypeIndex) {
+                    Text("Scripted").tag(0)
+                    Text("Non-Scripted").tag(1)
+                }
+                .font(Font.custom("Avenir Black", size: 20))
+                .pickerStyle(SegmentedPickerStyle())
+                .padding(.top, -10)
+                .padding(.bottom, 5)
+                
                 ScrollView {
                     
-                    ForEach(companyShows.shuffled()) { show in
+                    ForEach(companyShows.filter({ show in
+                        switch showTypeIndex {
+                        case 0:
+                            return show.showType == "Scripted"
+                        case 1:
+                            return show.showType == "Non-Scripted"
+                        default:
+                            return false
+                        }
+                    }).shuffled()) { show in
                         
                         NavigationLink(destination: TrailersVideoView(enteredShowType: show.showType, enteredShowCompany: show.showCompany, enteredShowPerson: show.showPerson, enteredShowPosition: show.showPosition, enteredShowEmail: show.showEmail, enteredShowPhone: show.showPhone, enteredShowName: show.showName, enteredShowImage: show.showImage, enteredShowLogo: show.showLogo, enteredShowColor: show.showColor, enteredShowYear: show.showYear, enteredShowGenre: show.showGenre, enteredShowDescription: show.showDescription, enteredShowTime: show.showTime, enteredShowEpisodes: show.showEpisodes, enteredShowUrl: show.showUrl), label: {
                             
