@@ -15,6 +15,22 @@ struct TrailersView: View {
     
     @Environment(\.colorScheme) var colorScheme
     
+    init() {
+        if let customFont = UIFont(name: "Avenir Heavy", size: 14) {
+            let attributes: [NSAttributedString.Key:Any] = [
+                .font : customFont
+            ]
+            UISegmentedControl.appearance().setTitleTextAttributes(attributes, for: .selected)
+        }
+        
+        if let customFont2 = UIFont(name: "Avenir Light", size: 14) {
+            let attributes2: [NSAttributedString.Key:Any] = [
+                .font : customFont2
+            ]
+            UISegmentedControl.appearance().setTitleTextAttributes(attributes2, for: .normal)
+        }
+    }
+    
     var body: some View {
         NavigationView {
             VStack {
