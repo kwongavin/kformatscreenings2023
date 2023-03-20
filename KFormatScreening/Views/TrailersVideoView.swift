@@ -30,6 +30,7 @@ struct TrailersVideoView: View {
     @State private var player: AVPlayer?
     
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         
@@ -137,12 +138,12 @@ struct TrailersVideoView: View {
                         
                         HStack {
                             Link(enteredShowPhone + "  | ", destination: URL(string: "tel:\(enteredShowPhone)")!)
-                                .accentColor(.black)
+                                .accentColor(colorScheme == .dark ? .white: .black)
                                 .font(Font.custom("Avenir Roman", size: 15))
 //                            Text(enteredShowPhone + "  | " )
 //                                .font(Font.custom("Avenir Roman", size: 15))
                             Link(enteredShowEmail, destination: URL(string: "mailto:\(enteredShowEmail)")!)
-                                .accentColor(.black)
+                                .accentColor(colorScheme == .dark ? .white: .black)
                                 .padding(.top, 1)
                                 .font(Font.custom("Avenir", size: 15))
 //                            Text(enteredShowEmail)

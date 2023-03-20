@@ -12,6 +12,7 @@ struct PTVideoView: View {
     
     @EnvironmentObject var company: CompanyModel
     @Environment(\.presentationMode) var presentationMode
+    @Environment(\.colorScheme) var colorScheme
     
     @State var selectedCompanyIndex: Int
     @State private var player: AVPlayer?
@@ -114,12 +115,12 @@ struct PTVideoView: View {
                         
                         HStack {
                             Link(company.companies[selectedCompanyIndex].companyPhone + "  | ", destination: URL(string: "tel:\(company.companies[selectedCompanyIndex].companyPhone)")!)
-                                .accentColor(.black)
+                                .accentColor(colorScheme == .dark ? .white: .black)
                                 .font(Font.custom("Avenir Roman", size: 15))
 //                            Text(company.companies[selectedCompanyIndex].companyPhone + "  | ")
 //                                .font(Font.custom("Avenir Roman", size: 15))
                             Link(company.companies[selectedCompanyIndex].companyEmail, destination: URL(string: "mailto:\(company.companies[selectedCompanyIndex].companyEmail)")!)
-                                .accentColor(.black)
+                                .accentColor(colorScheme == .dark ? .white: .black)
                                 .padding(.top, 1)
                                 .font(Font.custom("Avenir", size: 15))
 //                            Text(company.companies[selectedCompanyIndex].companyEmail)

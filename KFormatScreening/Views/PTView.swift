@@ -10,6 +10,7 @@ import SwiftUI
 struct PTView: View {
     
     @EnvironmentObject var company: CompanyModel
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         
@@ -27,7 +28,7 @@ struct PTView: View {
                             PTListView(selectedPTIndex: index)
                                 .frame(height:100)
                                 .padding(.vertical, 15)
-                                .accentColor(.black)
+                                .accentColor(colorScheme == .dark ? .white: .black)
                         })
                         Divider()
                     }

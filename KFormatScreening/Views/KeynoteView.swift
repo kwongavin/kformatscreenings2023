@@ -10,6 +10,7 @@ import SwiftUI
 struct KeynoteView: View {
     
     @EnvironmentObject var keynote: KeynoteModel
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -27,7 +28,7 @@ struct KeynoteView: View {
                         }, label: {
                             KeynoteListView(enteredKeynotePerson: index.keynotePerson, enteredKeynoteTitle: index.keynoteTitle, enteredKeynoteImage: index.keynoteImage, enteredKeynoteCompany: index.keynoteCompany, enteredKeynotePosition: index.keynotePosition, enteredKeynoteColor: index.keynoteColor, enteredKeynoteLogo: index.keynoteLogo)
                         })
-                        .accentColor(.black)
+                        .accentColor(colorScheme == .dark ? .white: .black)
                         Divider()
                             .padding(.vertical)
                         
@@ -35,7 +36,7 @@ struct KeynoteView: View {
                     
                 }
             }
-        } .padding([.top, .leading, .trailing])
+        } .padding()
     }
 }
 

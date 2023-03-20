@@ -11,6 +11,7 @@ struct TrailersView: View {
     
     @EnvironmentObject var company: CompanyModel
     @State private var companyShows: [Show] = []
+    @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
         NavigationView {
@@ -33,7 +34,7 @@ struct TrailersView: View {
                                 .multilineTextAlignment(.leading)
                                 .padding(.bottom, 25)
                         })
-                        .accentColor(.black)
+                        .accentColor(colorScheme == .dark ? .white: .black)
                         
                     }
                     
