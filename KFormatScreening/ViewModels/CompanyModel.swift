@@ -12,9 +12,11 @@ class CompanyModel: ObservableObject {
     @Published var companies = [Company]()
     
     init() {
-        
-        self.companies = getLocalData()
-        
+        getRemoteData { companies in
+            DispatchQueue.main.async {
+                self.companies = companies
+            }
+        }
     }
     
     func getLocalData() -> [Company] {
@@ -39,10 +41,32 @@ class CompanyModel: ObservableObject {
                 
                 return companyData
             }
-
+            
         } catch {
             print(error) // Error parsing local JSON data
         }
         return [Company]()
     }
+    
+    func getRemoteData(completion: @escaping ([Company]) -> Void) {
+
+        guard let url = URL(string: "https://raw.githubusercontent.com/kwongavin/kformatscreenings2023/main/KFormatScreening/Data/companydata.json") else { completion([])
+            return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data, error == nil else {
+                completion([])
+                return
+            }
+            
+            do {
+                let companies = try JSONDecoder().decode([Company].self, from: data)
+                completion(companies)
+            } catch {
+                completion([])
+            }
+        }.resume()
+    }
+    
 }

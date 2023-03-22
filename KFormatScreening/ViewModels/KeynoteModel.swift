@@ -12,9 +12,11 @@ class KeynoteModel: ObservableObject {
     @Published var keynotes = [Keynote]()
     
     init() {
-        
-        self.keynotes = getLocalKeynoteData()
-        
+        getRemoteData { keynotes in
+            DispatchQueue.main.async {
+                self.keynotes = keynotes
+            }
+        }
     }
     
     func getLocalKeynoteData() -> [Keynote] {
@@ -45,4 +47,26 @@ class KeynoteModel: ObservableObject {
         }
         return [Keynote]()
     }
+    
+    func getRemoteData(completion: @escaping ([Keynote]) -> Void) {
+
+        guard let url = URL(string: "https://raw.githubusercontent.com/kwongavin/kformatscreenings2023/main/KFormatScreening/Data/keynotedata.json") else { completion([])
+            return }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
+            guard let data = data, error == nil else {
+                completion([])
+                return
+            }
+            
+            do {
+                let companies = try JSONDecoder().decode([Keynote].self, from: data)
+                completion(companies)
+            } catch {
+                completion([])
+            }
+        }.resume()
+    }
+    
 }
