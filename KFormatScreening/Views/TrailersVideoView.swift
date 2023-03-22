@@ -74,7 +74,7 @@ struct TrailersVideoView: View {
                     }
             }
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 
                 Divider()
                     .padding(.vertical, 10)

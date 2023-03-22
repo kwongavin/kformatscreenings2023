@@ -92,7 +92,7 @@ struct PTVideoView: View {
 //                        })
             }
             
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 
                 Divider()
                     .padding(.vertical, 10)

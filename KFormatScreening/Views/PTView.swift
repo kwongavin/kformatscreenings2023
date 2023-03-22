@@ -22,7 +22,7 @@ struct PTView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     ForEach(company.companies.indices.shuffled(), id:\.self) { index in
                         NavigationLink(destination: PTVideoView(selectedCompanyIndex: index), label: {
                             PTListView(selectedPTIndex: index)

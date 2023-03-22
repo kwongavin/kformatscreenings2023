@@ -20,7 +20,7 @@ struct KeynoteView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     ForEach(keynote.keynotes.shuffled()) { index in
                         
                         NavigationLink(destination: {

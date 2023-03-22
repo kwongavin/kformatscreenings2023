@@ -51,7 +51,7 @@ struct TrailersView: View {
                 .padding(.top, -10)
                 .padding(.bottom, 5)
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     
                     ForEach(companyShows.filter({ show in
                         switch showTypeIndex {
