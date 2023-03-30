@@ -9,14 +9,14 @@ import SwiftUI
 
 struct RectanglePreset: View {
     
-//    var color = Color.mint
+//    var color = Colo0r.mint
     
     var body: some View {
         
         Rectangle()
 //            .foregroundColor(color)
             .cornerRadius(10)
-            .shadow(radius: 5)
+//            .shadow(radius: 5)
     }
 }
 
