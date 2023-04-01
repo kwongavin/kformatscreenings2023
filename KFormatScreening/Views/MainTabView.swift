@@ -10,6 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     
     @EnvironmentObject var company: CompanyModel
+    @State var onboardingShowing = true
     
     var body: some View {
         
@@ -46,6 +47,9 @@ struct MainTabView: View {
                         Text("Keynote")
                     }
                 }
+        }
+        .sheet(isPresented: $onboardingShowing) {
+            OnboardingView(onboardingShowing: $onboardingShowing)
         }
     }
 }

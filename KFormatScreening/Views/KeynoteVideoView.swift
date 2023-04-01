@@ -57,7 +57,7 @@ struct KeynoteVideoView: View {
             
             ScrollView(showsIndicators: false) {
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 10)
                 
                 ZStack(alignment: .leading) {
@@ -79,7 +79,7 @@ struct KeynoteVideoView: View {
                         }
                     } .padding()
                 }
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 10)
                 
                 Text(keynoteDescription)

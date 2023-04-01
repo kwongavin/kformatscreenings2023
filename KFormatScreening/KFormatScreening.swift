@@ -11,7 +11,7 @@ import SwiftUI
 struct KFormatScreening: App {
     var body: some Scene {
         WindowGroup {
-            OnboardingView()
+            MainTabView()
                 .environmentObject(CompanyModel())
                 .environmentObject(KeynoteModel())
         }

@@ -94,7 +94,7 @@ struct PTVideoView: View {
             
             ScrollView(showsIndicators: false) {
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 10)
                 
                 ZStack(alignment: .leading) {
@@ -131,7 +131,7 @@ struct PTVideoView: View {
                     } .padding()
                 }
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 12)
                 
                 VStack(alignment: .leading) {

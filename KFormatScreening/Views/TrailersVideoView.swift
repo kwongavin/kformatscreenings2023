@@ -76,7 +76,7 @@ struct TrailersVideoView: View {
             
             ScrollView(showsIndicators: false) {
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 10)
                 
                 ZStack(alignment: .leading) {
@@ -104,7 +104,7 @@ struct TrailersVideoView: View {
                     } .padding()
                 }
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 12)
                 
                 VStack(alignment: .leading) {
@@ -128,7 +128,7 @@ struct TrailersVideoView: View {
                         
                         Text(enteredShowCompany)
                             .font(Font.custom("Avenir Black", size: 22))
-                        Divider()
+                        DashedDivider()
                         HStack {
                             Text(enteredShowPerson)
                                 .font(Font.custom("Avenir Heavy", size: 20))

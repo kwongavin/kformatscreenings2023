@@ -12,8 +12,12 @@ struct OnboardingView: View {
     @State private var inProgress = false
     @State private var tabSelection = 0
     
+    @Binding var onboardingShowing: Bool
+    
     var body: some View {
         
+        VStack {
+            
             TabView(selection: $tabSelection) {
                 
                 ZStack {
@@ -26,17 +30,17 @@ struct OnboardingView: View {
                         Spacer()
                         Spacer()
                     }
-                    VStack {
+                    VStack(alignment: .leading) {
                         Spacer()
                         Spacer()
                         Text("Welcome to\nK-Format Screenings 2023!")
                             .font(Font.custom("Avenir Black", size: 22))
-                            .padding(.bottom, 15)
+                            .padding(.bottom, 20)
                         Text("From gripping dramas to thrilling reality programs, experience the innovative and cutting-edge content crafted by Korea's top media companies.")
-                            .font(Font.custom("Avenir", size: 16))
-                            .padding(.horizontal, 50)
+                            .font(Font.custom("Avenir", size: 17))
                         Spacer()
                     }
+                    .padding(35)
                 }
                 .tag(0)
                 
@@ -50,22 +54,43 @@ struct OnboardingView: View {
                         Spacer()
                         Spacer()
                     }
-                    VStack {
+                    VStack(alignment: .leading) {
                         Spacer()
                         Spacer()
-                        Text("Check out the hottest\nKorean TV Shows!")
+                        Text("Step into the captivating\nworld of K-Format!")
                             .font(Font.custom("Avenir Black", size: 22))
-                            .padding(.bottom, 15)
-                            .offset(x: -30)
+                            .padding(.bottom, 20)
                         Text("Take a moment to explore each company's introduction and learn more about their unique style and approach. We hope you enjoy this immersive experience and discover your next must-watch show.")
-                            .font(Font.custom("Avenir", size: 16))
-                            .padding(.horizontal, 50)
+                            .font(Font.custom("Avenir", size: 17))
                         Spacer()
                     }
+                    .padding(35)
                 }
                 .tag(1)
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .always))
+            
+            Button(action: {
+                if tabSelection == 0 {
+                    tabSelection = 1
+                } else {
+                    onboardingShowing = false
+                }
+            }, label: {
+                ZStack {
+                    Rectangle()
+                        .foregroundColor(.white)
+                        .frame(height: 48)
+                        .cornerRadius(10)
+                    
+                    Text(tabSelection == 0 ? "Next" : "Get in!")
+                        .font(Font.custom("Avenir Heavy", size: 18))
+                        .accentColor(.blue)
+                        .padding()
+                }
+            })
+            .offset(y: -20)
+        }
     }
 }
 
@@ -78,6 +103,6 @@ struct OnboardingView: View {
 
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingView()
+        OnboardingView(onboardingShowing: .constant(false))
     }
 }

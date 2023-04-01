@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092629C56E8B00AA13C6 /* TrailersListView.swift */; };
 		860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092829C5825100AA13C6 /* TrailersVideoView.swift */; };
+		862C4A1029D78E0D001D15C7 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */; };
 		86317F9F29C6828900A9B472 /* keynotedata.json in Resources */ = {isa = PBXBuildFile; fileRef = 86317F9E29C6828900A9B472 /* keynotedata.json */; };
 		86317FA129C684B000A9B472 /* Keynote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86317FA029C684B000A9B472 /* Keynote.swift */; };
 		86317FA329C6852F00A9B472 /* KeynoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86317FA229C6852F00A9B472 /* KeynoteModel.swift */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		860A092629C56E8B00AA13C6 /* TrailersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersListView.swift; sourceTree = "<group>"; };
 		860A092829C5825100AA13C6 /* TrailersVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersVideoView.swift; sourceTree = "<group>"; };
+		862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
 		86317F9E29C6828900A9B472 /* keynotedata.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = keynotedata.json; sourceTree = "<group>"; };
 		86317FA029C684B000A9B472 /* Keynote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keynote.swift; sourceTree = "<group>"; };
 		86317FA229C6852F00A9B472 /* KeynoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeynoteModel.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				86317FA629C6B00D00A9B472 /* KeynoteListView.swift */,
 				86317FA829C7970D00A9B472 /* KeynoteVideoView.swift */,
 				868D7DF529C3D530003C6494 /* RectanglePreset.swift */,
+				862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */,
 				86D6352929D600A100267136 /* Onboarding */,
 			);
 			path = Views;
@@ -278,6 +281,7 @@
 				868D7DF429C3D460003C6494 /* PTVideoView.swift in Sources */,
 				86317FA729C6B00D00A9B472 /* KeynoteListView.swift in Sources */,
 				86317FA329C6852F00A9B472 /* KeynoteModel.swift in Sources */,
+				862C4A1029D78E0D001D15C7 /* DashedDivider.swift in Sources */,
 				868D7DE929C396B2003C6494 /* TrailersView.swift in Sources */,
 				86D6353229D608A800267136 /* OnboardingView.swift in Sources */,
 				868D7DF629C3D530003C6494 /* RectanglePreset.swift in Sources */,
