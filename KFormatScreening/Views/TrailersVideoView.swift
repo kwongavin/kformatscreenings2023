@@ -113,7 +113,7 @@ struct TrailersVideoView: View {
                         .padding(.horizontal)
                 }
                 
-                Divider()
+                DashedDivider()
                     .padding(.vertical, 10)
                 
                 ZStack(alignment: .leading) {
@@ -128,7 +128,7 @@ struct TrailersVideoView: View {
                         
                         Text(enteredShowCompany)
                             .font(Font.custom("Avenir Black", size: 22))
-                        DashedDivider()
+                        Divider()
                         HStack {
                             Text(enteredShowPerson)
                                 .font(Font.custom("Avenir Heavy", size: 20))

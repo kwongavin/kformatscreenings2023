@@ -10,6 +10,7 @@ import SwiftUI
 struct MainTabView: View {
     
     @EnvironmentObject var company: CompanyModel
+//    @AppStorage("onboardingShowing") var onboardingShowing = true
     @State var onboardingShowing = true
     
     var body: some View {
