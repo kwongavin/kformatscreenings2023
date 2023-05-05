@@ -51,6 +51,7 @@ struct MainTabView: View {
         }
         .sheet(isPresented: $onboardingShowing) {
             OnboardingView(onboardingShowing: $onboardingShowing)
+                .presentationDetents([.medium, .large])
         }
     }
 }
