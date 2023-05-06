@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8605961C2A07076C008DAEEF /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605961B2A07076C008DAEEF /* MeetingView.swift */; };
+		8605961E2A070988008DAEEF /* WebPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8605961D2A070988008DAEEF /* WebPageView.swift */; };
 		860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092629C56E8B00AA13C6 /* TrailersListView.swift */; };
 		860A092929C5825100AA13C6 /* TrailersVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A092829C5825100AA13C6 /* TrailersVideoView.swift */; };
 		862C4A1029D78E0D001D15C7 /* DashedDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		8605961B2A07076C008DAEEF /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		8605961D2A070988008DAEEF /* WebPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPageView.swift; sourceTree = "<group>"; };
 		860A092629C56E8B00AA13C6 /* TrailersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersListView.swift; sourceTree = "<group>"; };
 		860A092829C5825100AA13C6 /* TrailersVideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrailersVideoView.swift; sourceTree = "<group>"; };
 		862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedDivider.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				86317FA829C7970D00A9B472 /* KeynoteVideoView.swift */,
 				868D7DF529C3D530003C6494 /* RectanglePreset.swift */,
 				8605961B2A07076C008DAEEF /* MeetingView.swift */,
+				8605961D2A070988008DAEEF /* WebPageView.swift */,
 				862C4A0F29D78E0D001D15C7 /* DashedDivider.swift */,
 				86D6352929D600A100267136 /* Onboarding */,
 			);
@@ -296,6 +299,7 @@
 				860A092729C56E8B00AA13C6 /* TrailersListView.swift in Sources */,
 				868D7DDC29C38469003C6494 /* Company.swift in Sources */,
 				86317FA129C684B000A9B472 /* Keynote.swift in Sources */,
+				8605961E2A070988008DAEEF /* WebPageView.swift in Sources */,
 				868D7DEC29C3976A003C6494 /* KeynoteView.swift in Sources */,
 				868D7DE329C3939E003C6494 /* MainTabView.swift in Sources */,
 				8605961C2A07076C008DAEEF /* MeetingView.swift in Sources */,

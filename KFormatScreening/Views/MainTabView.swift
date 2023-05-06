@@ -41,11 +41,11 @@ struct MainTabView: View {
                     }
                 }
             
-            KeynoteView()
+            WebPageView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "mic.fill")
-                        Text("Keynote")
+                        Image(systemName: "person.crop.circle.fill")
+                        Text("Check-in")
                     }
                 }
         }
