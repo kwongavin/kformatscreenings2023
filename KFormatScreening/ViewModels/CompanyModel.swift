@@ -12,11 +12,13 @@ class CompanyModel: ObservableObject {
     @Published var companies = [Company]()
     
     init() {
-        getRemoteData { companies in
-            DispatchQueue.main.async {
-                self.companies = companies
-            }
-        }
+        self.companies = getLocalData()
+        
+//        getRemoteData { companies in
+//            DispatchQueue.main.async {
+//                self.companies = companies
+//            }
+//        }
     }
     
     func getLocalData() -> [Company] {

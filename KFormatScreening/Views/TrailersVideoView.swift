@@ -85,7 +85,7 @@ struct TrailersVideoView: View {
                         .padding(.top, 5)
                         .opacity(0.2)
                         .frame(maxWidth: .infinity)
-                        .aspectRatio(16/4,contentMode: .fit)
+                        .aspectRatio(16/4.5,contentMode: .fit)
                     
                     VStack(alignment: .leading, spacing: 5) {
                         HStack {
@@ -93,6 +93,7 @@ struct TrailersVideoView: View {
                                 .font(Font.custom("Avenir Roman", size: 18))
                             Text(enteredShowGenre)
                                 .font(Font.custom("Avenir Roman", size: 18))
+                                .frame(maxWidth: .infinity, alignment: .leading)
                         }
                         
                         HStack {
@@ -122,19 +123,18 @@ struct TrailersVideoView: View {
                         .padding(.top, 5)
                         .opacity(0.2)
                         .frame(maxWidth: .infinity)
-                        .aspectRatio(16/6.5,contentMode: .fit)
+                        .aspectRatio(16/10,contentMode: .fit)
                     
                     VStack(alignment: .leading, spacing: 10) {
                         
                         Text(enteredShowCompany)
                             .font(Font.custom("Avenir Black", size: 22))
                         Divider()
-                        HStack {
+                            .padding(.vertical, 10)
                             Text(enteredShowPerson)
                                 .font(Font.custom("Avenir Heavy", size: 20))
-                            Text("|  " + enteredShowPosition)
+                            Text(enteredShowPosition)
                                 .font(Font.custom("Avenir", size: 18))
-                        }
                         
                         HStack {
                             Link(enteredShowPhone + "  | ", destination: URL(string: "tel:\(enteredShowPhone)")!)
