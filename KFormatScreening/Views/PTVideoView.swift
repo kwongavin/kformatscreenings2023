@@ -143,12 +143,9 @@ struct PTVideoView: View {
                                     .cornerRadius(20)
                                     .padding(.trailing, 20)
                                 VStack(alignment: .leading) {
-                                    HStack {
-                                        Text(show.showName)
-                                            .font(Font.custom("Avenir Black", size: 20))
-                                            .padding(.bottom, 1)
-                                        Spacer()
-                                    }
+                                    Text(show.showName)
+                                        .font(Font.custom("Avenir Black", size: 20))
+                                        .padding(.bottom, 1)
                                     Divider()
                                     Text(show.showYear + "  |  " + show.showType)
                                         .font(Font.custom("Avenir", size: 16))
@@ -156,6 +153,7 @@ struct PTVideoView: View {
                                     Text(show.showTime + "  |  " + show.showGenre)
                                         .font(Font.custom("Avenir", size: 16))
                                 }
+                                .multilineTextAlignment(.leading)
                             }
                             .accentColor(colorScheme == .dark ? .white: .black)
                             .padding(.bottom, 25)
