@@ -28,8 +28,8 @@ struct MainTabView: View {
             PTView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "tv.circle")
-                        Text("Presentations")
+                        Image(systemName: "exclamationmark.bubble.circle.fill")
+                        Text("Companies")
                     }
                 }
             

@@ -35,6 +35,9 @@ struct PTView: View {
                 }
             }
             .padding()
+            .onAppear {
+                company.companies.shuffle()
+            }
         }
     }
 }

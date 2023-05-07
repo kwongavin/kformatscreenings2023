@@ -11,6 +11,8 @@ import AVKit
 struct PTVideoView: View {
     
     @EnvironmentObject var company: CompanyModel
+    @State private var companyShows: [Show] = []
+    
     @Environment(\.presentationMode) var presentationMode
     @Environment(\.colorScheme) var colorScheme
     
