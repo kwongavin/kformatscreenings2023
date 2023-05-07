@@ -41,7 +41,7 @@ struct OnboardingView: View {
                         VStack(alignment: .leading) {
                             Spacer()
                             Spacer()
-                            Text("Welcome to\nK-Format Screenings 2023!")
+                            Text("Welcome to\n2023 K-Broadcasting at\nLA Screenings!")
                                 .font(Font.custom("Avenir Black", size: 22))
                                 .padding(.bottom, 20)
                             Text("From gripping dramas to thrilling reality programs, experience the innovative and cutting-edge content crafted by Korea's top media companies.")
@@ -65,7 +65,7 @@ struct OnboardingView: View {
                         VStack(alignment: .leading) {
                             Spacer()
                             Spacer()
-                            Text("Step into the captivating\nworld of K-Format!")
+                            Text("Step into the captivating\nworld of K-Broadcasting!")
                                 .font(Font.custom("Avenir Black", size: 22))
                                 .padding(.bottom, 20)
                             Text("Take a moment to explore each company's introduction and learn more about their unique style and approach. We hope you enjoy this immersive experience and discover your next must-watch show.")
