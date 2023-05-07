@@ -31,10 +31,12 @@ struct OnboardingView: View {
                     ZStack {
                         VStack {
                             Spacer()
-                            LottieView(name: "onboarding2",
+                            LottieView(name: "onboarding1",
                                        loopMode: .loop)
                             .aspectRatio(contentMode: .fit)
-                            .padding(.bottom, 250)
+                            .opacity(0.9)
+                            .padding(.horizontal, 40)
+                            .padding(.bottom, 350)
                             Spacer()
                             Spacer()
                         }
@@ -55,10 +57,11 @@ struct OnboardingView: View {
                     ZStack {
                         VStack {
                             Spacer()
-                            LottieView(name: "onboarding3",
+                            LottieView(name: "onboarding2",
                                        loopMode: .loop)
                             .aspectRatio(contentMode: .fit)
-                            .padding(.bottom, 300)
+                            .opacity(0.9)
+                            .padding(.bottom, 330)
                             Spacer()
                             Spacer()
                         }

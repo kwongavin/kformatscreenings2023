@@ -17,7 +17,7 @@ struct PTView: View {
         NavigationView {
             VStack(alignment: .leading) {
                 
-                Text("Presentations")
+                Text("Companies")
                     .font(Font.custom("Avenir Heavy", size: 24))
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding()

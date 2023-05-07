@@ -15,7 +15,7 @@ struct WelcomeView: View {
                 Group {
                     Rectangle()
                         .foregroundColor(Color("color_event"))
-                        .frame(height: 5)
+                        .frame(height: 7)
                         .cornerRadius(10)
                     
                     Text("Welcome to 2023 K-Broadcasting\nat LA Screenings!")
@@ -25,14 +25,14 @@ struct WelcomeView: View {
                     
                     Rectangle()
                         .foregroundColor(Color("color_event"))
-                        .frame(height: 5)
+                        .frame(height: 4)
                         .cornerRadius(10)
                         .padding(.bottom, 15)
                 }
                 
                 ZStack(alignment: .leading) {
                     Rectangle()
-                        .foregroundColor(.blue)
+                        .foregroundColor(.purple)
                         .cornerRadius(18)
                         .opacity(0.1)
                     VStack(alignment: .leading) {
@@ -64,23 +64,28 @@ struct WelcomeView: View {
                 
                 Rectangle()
                     .foregroundColor(Color("color_event"))
-                    .frame(height: 5)
+                    .frame(height: 4)
                     .cornerRadius(10)
                     .padding(.bottom, 20)
                 
                 ZStack {
                     Rectangle()
-                        .foregroundColor(.blue)
+                        .foregroundColor(.purple)
                         .cornerRadius(18)
                         .opacity(0.1)
                     Text("\nThis showcase event is being held both online and in-person. You can check out our online showcase, featuring trailers and introductions, from May 8 to May 19 on the website.\n\nThen, you will be able to request for an online meeting OR an in-person meeting during the 2023 LA screenings from May 17 to May 19 at Fairmount Century Plaza. We strongly encourage you to register on this website and reserve a meeting prior to the event since meeting spots tend to fill up fast.\n")
                         .font(Font.custom("Avenir", size: 17))
                     .padding(5)
+                    .padding(.leading, 5)
                 }
+                MapView() 
+                    .frame(height: 200)
+                    .cornerRadius(18)
+                    .padding(.top, 15)
                 
                 Rectangle()
                     .foregroundColor(Color("color_event"))
-                    .frame(height: 5)
+                    .frame(height: 7)
                     .cornerRadius(10)
                     .padding(.top, 20)
                 
