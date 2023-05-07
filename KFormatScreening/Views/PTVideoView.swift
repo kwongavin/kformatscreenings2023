@@ -85,9 +85,9 @@ struct PTVideoView: View {
                                 .accentColor(colorScheme == .dark ? .white: .black)
                                 .font(Font.custom("Avenir Roman", size: 15))
                             Link(company.companies[selectedCompanyIndex].companyEmail, destination: URL(string: "mailto:\(company.companies[selectedCompanyIndex].companyEmail)")!)
-                                .accentColor(colorScheme == .dark ? .white: .black)
+                                .accentColor(colorScheme == .dark ? .white: Color("color_event"))
                                 .padding(.top, 1)
-                                .font(Font.custom("Avenir", size: 15))
+                                .font(Font.custom("Avenir Roman", size: 15))
                         }
                         .padding(.top, 10)
                         Link(company.companies[selectedCompanyIndex].companyUrl, destination: URL(string: "\(company.companies[selectedCompanyIndex].companyUrl)")!)

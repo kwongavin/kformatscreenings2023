@@ -51,7 +51,7 @@ struct MainTabView: View {
         }
         .sheet(isPresented: $onboardingShowing) {
             OnboardingView(onboardingShowing: $onboardingShowing)
-                .presentationDetents([.medium, .large])
+//                .presentationDetents([.medium, .large])
         }
     }
 }
@@ -60,6 +60,5 @@ struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
         MainTabView()
             .environmentObject(CompanyModel())
-            .environmentObject(KeynoteModel())
     }
 }

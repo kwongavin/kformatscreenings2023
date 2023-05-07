@@ -13,7 +13,6 @@ struct KFormatScreening: App {
         WindowGroup {
             MainTabView()
                 .environmentObject(CompanyModel())
-                .environmentObject(KeynoteModel())
         }
     }
 }
