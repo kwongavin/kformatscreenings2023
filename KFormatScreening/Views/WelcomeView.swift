@@ -13,10 +13,19 @@ struct WelcomeView: View {
             VStack(alignment: .leading) {
                 
                 Group {
-                    Rectangle()
-                        .foregroundColor(Color("color_event"))
-                        .frame(height: 7)
-                        .cornerRadius(10)
+                    ZStack {
+                        LottieView(name: "onboarding2",
+                                   loopMode: .loop)
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: 0)
+                        .opacity(0.9)
+                        Rectangle()
+                            .foregroundColor(Color("color_event"))
+                            .frame(height: 10)
+                            .cornerRadius(10)
+                            .padding(.top, 98)
+                    }
+                    .padding(.top, -30)
                     
                     Text("Welcome to 2023 K-Broadcasting\nat LA Screenings!")
                         .font(Font.custom("Avenir Heavy", size: 21))
@@ -36,13 +45,18 @@ struct WelcomeView: View {
                         .cornerRadius(18)
                         .opacity(0.1)
                     VStack(alignment: .leading) {
-                        HStack {
-                            Text("Virtual Showcase")
-                                .font(Font.custom("Avenir Heavy", size: 20))
-                                .padding(.vertical)
-                            Text("|  5.8 - 5.19")
-                                .font(Font.custom("Avenir", size: 18))
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Text("Virtual Showcase")
+                                    .font(Font.custom("Avenir Heavy", size: 20))
+                                Text("|  5.8 - 5.19")
+                                    .font(Font.custom("Avenir", size: 18))
+                            }
+                            Link("kbroadcastingscreenings.com", destination: URL(string: "https://www.kbroadcastingscreenings.com")!)
+                                .font(Font.custom("Avenir", size: 17))
+                                .accentColor(.black)
                         }
+                        .padding(.vertical)
                         .padding(.top, 10)
                         
                         HStack {
@@ -58,7 +72,7 @@ struct WelcomeView: View {
                     .padding(.leading, 15)
                 }
                 
-                Text("\n2023 K-BROADCASTING at LA Screenings is an exciting showcase of the latest and most popular Korean TV shows, organized by the Ministry of Culture, Sports and Tourism and the Korea Creative Content Agency, featuring both scripted and non-scripted formats from major media companies in Korea.\n\nHere, you will find a curated selection of trailers, showcasing their latest and most exciting TV shows. Take a moment to explore each company's introduction and learn more about their programs!\n\nInterested in doing business with them? Simply use the contact information provided to reach out and start a conversation. We hope you enjoy this immersive experience and discover the next must-watch show.\n")
+                Text("\n2023 K-Broadcasting at LA Screenings is an exciting showcase of the latest and most popular Korean TV shows, organized by the Ministry of Culture, Sports and Tourism and the Korea Creative Content Agency, featuring both scripted and non-scripted formats from major media companies in Korea.\n\nHere, you will find a curated selection of trailers, showcasing their latest and most exciting TV shows. Take a moment to explore each company's introduction and learn more about their programs!\n\nInterested in doing business with them? Simply use the contact information provided to reach out and start a conversation. We hope you enjoy this immersive experience and discover the next must-watch show.\n")
                     .font(Font.custom("Avenir", size: 17))
                     .padding(5)
                 
@@ -75,10 +89,10 @@ struct WelcomeView: View {
                         .opacity(0.1)
                     Text("\nThis showcase event is being held both online and in-person. You can check out our online showcase, featuring trailers and introductions, from May 8 to May 19 on the website.\n\nThen, you will be able to request for an online meeting OR an in-person meeting during the 2023 LA screenings from May 17 to May 19 at Fairmount Century Plaza. We strongly encourage you to register on this website and reserve a meeting prior to the event since meeting spots tend to fill up fast.\n")
                         .font(Font.custom("Avenir", size: 17))
-                    .padding(5)
-                    .padding(.leading, 5)
+                        .padding(5)
+                        .padding(.leading, 5)
                 }
-                MapView() 
+                MapView()
                     .frame(height: 200)
                     .cornerRadius(18)
                     .padding(.top, 15)
