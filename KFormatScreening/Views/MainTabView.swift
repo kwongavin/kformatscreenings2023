@@ -45,7 +45,7 @@ struct MainTabView: View {
                 .tabItem {
                     VStack {
                         Image(systemName: "person.crop.circle.fill")
-                        Text("Check-in")
+                        Text("Register")
                     }
                 }
         }
